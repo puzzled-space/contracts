@@ -1,0 +1,45 @@
+{
+  "name": "puzzled_space_contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mumbai": "npx hardhat run --network mumbai scripts/deploy_mumbai.ts",
+    "deploy_nft": "npx hardhat run --network polygon scripts/deploy_nft.ts",
+    "deploy_custodian": "npx hardhat run --network rinkeby scripts/deploy_custodian.ts",
+    "deploy": "npx hardhat run --network eth scripts/deploy.ts",
+    "wallet": "npx hardhat run --network mumbai scripts/deploy_mumbai_wallet.ts",
+    "random": "npx hardhat run --network mumbai scripts/deploy_random.ts",
+    "deposit": "npx hardhat run --network mumbai scripts/deposit_nft.ts",
+    "mint": "npx hardhat run --network mumbai scripts/mint_nft.ts",
+    "deploy_collections": "npx hardhat run --network mumbai scripts/deploy_collections.ts",
+    "deployStubCollection": "npx hardhat run --network mumbai scripts/deployStubCollection.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://E1ektr0@bitbucket.org/exilion/puzzled_space_contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/exilion/puzzled_space_contracts/issues"
+  },
+  "homepage": "https://bitbucket.org/exilion/puzzled_space_contracts#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "2.14.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
+    "@types/jest": "^27.0.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
